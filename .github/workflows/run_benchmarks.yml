@@ -90,7 +90,7 @@ jobs:
             set -euo pipefail
             cd ~/benchmark
           
-            php8.5 /usr/local/bin/composer update --no-dev
+            php8.5 /usr/local/bin/composer install --no-dev
             
             php8.5 tempest cache:clear --force
             php8.5 tempest discovery:generate
